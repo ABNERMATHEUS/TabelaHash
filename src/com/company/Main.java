@@ -13,6 +13,8 @@ public class Main {
         tabelaHash.insere(10);
         tabelaHash.insere(10);
 
+        tabelaHash.imprimir();
+
         /*===========================*/
         do{
             System.out.print("Digite: ");

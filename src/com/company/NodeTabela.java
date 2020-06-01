@@ -20,12 +20,13 @@ public class NodeTabela {
 
     public void imprimir (){
         if(getInformacao() == -1){
-            System.out.println("Vazio");
+            System.out.print("-1");
 
         }else
         System.out.print(getInformacao());
         System.out.print("  -  ");
         lista.imprime();
+        System.out.print("\n  ");
     }
 
     public boolean getInfoLista(int chave){
