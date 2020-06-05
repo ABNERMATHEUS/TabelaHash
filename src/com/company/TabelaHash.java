@@ -6,6 +6,7 @@ public class TabelaHash {
     private int colisao;
     private NodeTabela tabela [];
     private  Random random;
+
     public TabelaHash(int elemento) {
         random = new Random();
         this.tabela = new NodeTabela[elemento];

@@ -75,7 +75,7 @@ public class Lista {
                 return;
             }
             while (aux != null) {
-                System.out.print(aux.getInformacao());
+                System.out.print(aux.getInformacao()+" - ");
                 aux = aux.getProximo();
             }
         }

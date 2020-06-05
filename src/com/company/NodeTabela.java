@@ -3,7 +3,7 @@ package com.company;
 public class NodeTabela {
 
     private int informacao;
-    private  Lista lista = new Lista();
+    private  Lista lista ;
 
 
 
@@ -15,6 +15,9 @@ public class NodeTabela {
         this.informacao = informacao;
     }
     public void insereLista(int elemento){
+        if(lista == null){
+            lista = new Lista();
+        }
         lista.insereUltimo(elemento);
     }
 
@@ -25,7 +28,10 @@ public class NodeTabela {
         }else
         System.out.print(getInformacao());
         System.out.print("  -  ");
-        lista.imprime();
+        if(lista != null){
+            lista.imprime();
+        }
+
         System.out.print("\n  ");
     }
 

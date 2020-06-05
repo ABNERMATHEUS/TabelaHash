@@ -19,7 +19,9 @@ public class Main {
         do{
             System.out.print("Digite: ");
             entrada = scanner.nextInt();
-            System.out.println(tabelaHash.busca(entrada));
+            if(entrada != -1){
+                System.out.println(tabelaHash.busca(entrada));
+            }
 
         }while (entrada != -1);
         /*===========================*/
